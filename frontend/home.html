@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>PC Gamer Hub</title>
+
+
+<style>
+
+
+body{
+
+margin:0;
+background:#080810;
+color:white;
+font-family:Arial;
+
+}
+
+
+header{
+
+background:#111827;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+
+
+.logo{
+
+font-size:30px;
+color:#00ffff;
+font-weight:bold;
+
+}
+
+
+nav a{
+
+color:white;
+margin:15px;
+text-decoration:none;
+
+}
+
+
+
+.hero{
+
+height:500px;
+
+background:
+
+linear-gradient(
+rgba(0,0,0,.6),
+rgba(0,0,0,.8)
+),
+
+url("banner.jpg");
+
+background-size:cover;
+
+display:flex;
+
+align-items:center;
+
+padding:40px;
+
+}
+
+
+
+.hero h1{
+
+font-size:60px;
+
+}
+
+
+
+.btn{
+
+background:#00ffff;
+
+color:black;
+
+padding:15px 30px;
+
+border-radius:10px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+
+.container{
+
+padding:40px;
+
+}
+
+
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+
+
+.juego{
+
+background:#151522;
+
+border-radius:15px;
+
+overflow:hidden;
+
+transition:.3s;
+
+}
+
+
+
+.juego:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+
+.juego img{
+
+width:100%;
+
+height:250px;
+
+object-fit:cover;
+
+}
+
+
+
+.info{
+
+padding:20px;
+
+}
+
+
+
+.etiqueta{
+
+color:#00ffff;
+
+}
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+
+<header>
+
+
+<div class="logo">
+🎮 PC Gamer Hub
+</div>
+
+
+<nav>
+
+<a href="#">
+Inicio
+</a>
+
+<a href="#">
+Juegos
+</a>
+
+<a href="#">
+Comunidad
+</a>
+
+</nav>
+
+
+</header>
+
+
+
+
+<section class="hero">
+
+
+<div>
+
+
+<h1>
+Tu mundo gamer
+</h1>
+
+
+<p>
+Descubre juegos, noticias y una comunidad de jugadores.
+</p>
+
+
+<a class="btn" href="#">
+Explorar juegos
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<section class="container">
+
+
+<h2>
+🔥 Juegos populares
+</h2>
+
+
+<br>
+
+
+<div class="grid">
+
+
+<div class="juego">
+
+
+<img src="juego1.jpg">
+
+
+<div class="info">
+
+<h3>
+Juego ejemplo
+</h3>
+
+
+<p class="etiqueta">
+RPG
+</p>
+
+
+<p>
+Descripción del juego.
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="juego">
+
+
+<img src="juego2.jpg">
+
+
+<div class="info">
+
+<h3>
+Juego ejemplo 2
+</h3>
+
+
+<p class="etiqueta">
+Acción
+</p>
+
+
+<p>
+Descripción del juego.
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+</body>
+
+</html>

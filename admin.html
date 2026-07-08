@@ -1,0 +1,69 @@
+ALTER TABLE usuarios
+ADD COLUMN rol TEXT DEFAULT 'usuario';
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Panel Administrador</title>
+
+<style>
+
+body{
+background:#09090f;
+color:white;
+font-family:Arial;
+padding:40px;
+}
+
+input, textarea{
+display:block;
+width:400px;
+padding:12px;
+margin:10px;
+}
+
+button{
+padding:15px;
+background:#00ffff;
+border:0;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<h1>🎮 Panel Administrador</h1>
+
+
+<h2>Agregar juego</h2>
+
+
+<input id="nombre" placeholder="Nombre">
+
+<input id="categoria" placeholder="Categoría">
+
+
+<input 
+type="file"
+id="imagen"
+>
+
+
+<textarea id="descripcion"
+placeholder="Descripción">
+</textarea>
+
+
+<input id="requisitos"
+placeholder="Requisitos">
+
+
+<button onclick="guardar()">
+Subir juego
+</button>

@@ -1,0 +1,5 @@
+PORT=3000
+
+SECRET_TOKEN=pon_una_clave_larga_y_segura
+
+DATABASE=gamerhub.db

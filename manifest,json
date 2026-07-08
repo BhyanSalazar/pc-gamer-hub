@@ -1,0 +1,16 @@
+{
+  "name": "PC Gamer Hub",
+  "short_name": "GamerHub",
+  "description": "Comunidad gamer de PC y emulación",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#09090f",
+  "theme_color": "#00ffff",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

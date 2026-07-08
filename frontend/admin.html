@@ -1,0 +1,123 @@
+ALTER TABLE usuarios
+ADD COLUMN rol TEXT DEFAULT 'usuario';
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Panel Administrador</title>
+
+<style>
+
+body{
+background:#09090f;
+color:white;
+font-family:Arial;
+padding:40px;
+}
+
+input, textarea{
+display:block;
+width:400px;
+padding:12px;
+margin:10px;
+}
+
+button{
+padding:15px;
+background:#00ffff;
+border:0;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<h1>🎮 Panel Administrador</h1>
+
+
+<h2>Agregar juego</h2>
+
+
+<input id="nombre" placeholder="Nombre del juego">
+
+<input id="categoria" placeholder="Categoría">
+
+<input id="imagen" placeholder="URL imagen">
+
+
+<textarea id="descripcion"
+placeholder="Descripción">
+</textarea>
+
+
+<input id="requisitos"
+placeholder="Requisitos PC">
+
+
+<button onclick="guardarJuego()">
+Publicar juego
+</button>
+
+
+
+<script>
+
+function guardarJuego(){
+
+
+let juego={
+
+nombre:nombre.value,
+
+categoria:categoria.value,
+
+imagen:imagen.value,
+
+descripcion:descripcion.value,
+
+requisitos:requisitos.value
+
+};
+
+
+fetch(
+"http://localhost:3000/admin/juegos",
+{
+
+method:"POST",
+
+headers:{
+"Content-Type":"application/json",
+
+"rol":"administrador"
+},
+
+body:JSON.stringify(juego)
+
+}
+
+)
+
+.then(r=>r.json())
+
+.then(data=>{
+
+alert(data.mensaje);
+
+});
+
+
+}
+
+</script>
+
+
+</body>
+
+</html>

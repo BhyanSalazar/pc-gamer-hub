@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Perfil Gamer</title>
+
+</head>
+
+
+<body>
+
+
+<h1 id="nombre">
+Jugador
+</h1>
+
+
+<h2>
+Nivel:
+<span id="nivel">
+1
+</span>
+</h2>
+
+
+<h3>
+Puntos:
+<span id="puntos">
+0
+</span>
+</h3>
+
+
+
+<script>
+
+let usuario =
+JSON.parse(
+localStorage.getItem("usuario")
+);
+
+
+if(usuario){
+
+nombre.innerHTML=
+usuario.nombre;
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
