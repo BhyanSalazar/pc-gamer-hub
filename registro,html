@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Crear cuenta Gamer</title>
+
+<style>
+
+body{
+background:#09090f;
+color:white;
+font-family:Arial;
+text-align:center;
+padding:50px;
+}
+
+input{
+display:block;
+margin:15px auto;
+padding:15px;
+width:300px;
+border-radius:8px;
+}
+
+button{
+
+padding:15px 30px;
+background:#00ffff;
+border:0;
+border-radius:8px;
+font-weight:bold;
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<h1>🎮 Crear cuenta</h1>
+
+
+<input id="nombre" placeholder="Nombre gamer">
+
+<input id="email" placeholder="Correo">
+
+<input id="password" type="password" placeholder="Contraseña">
+
+
+<button onclick="registrar()">
+Registrarme
+</button>
+
+
+
+<script>
+
+function registrar(){
+
+let usuario={
+nombre:document.getElementById("nombre").value,
+email:document.getElementById("email").value
+};
+
+
+localStorage.setItem(
+"usuario",
+JSON.stringify(usuario)
+);
+
+
+alert(
+"Cuenta creada correctamente"
+);
+
+
+window.location="comunidad.html";
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
